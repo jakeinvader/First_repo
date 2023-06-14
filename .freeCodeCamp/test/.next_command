@@ -90,3 +90,4 @@ history -a
 vi courses_test.csv
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+vi insert_data.sh
