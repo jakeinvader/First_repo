@@ -143,3 +143,4 @@ history -a
 vi students_test.csv
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+vi insert_data.sh
