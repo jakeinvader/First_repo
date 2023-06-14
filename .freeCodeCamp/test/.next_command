@@ -81,3 +81,12 @@ history -a
 cp courses.csv courses_test.csv
 echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
 history -a
+vi courses_test.csv
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+vi courses_test.csv
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
+vi courses_test.csv
+echo $PWD >> ~/project/.freeCodeCamp/test/.cwd
+history -a
