@@ -2,7 +2,7 @@
 
 PSQL="psql -X --username=freecodecamp --dbname=salon --tuples-only -c"
 
-#echo $($PSQL "TRUNCATE customers, appointments")
+echo $($PSQL "TRUNCATE customers, appointments")
 
 echo -e "\n~~~~~ MY SALON ~~~~~\n"
 
