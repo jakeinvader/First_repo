@@ -174,9 +174,6 @@ ALTER TABLE ONLY public.services ALTER COLUMN service_id SET DEFAULT nextval('pu
 --
 
 INSERT INTO public.appointments VALUES (93, 102, 1, '10:30');
-INSERT INTO public.appointments VALUES (94, 102, 1, '');
-INSERT INTO public.appointments VALUES (95, 102, 1, '');
-INSERT INTO public.appointments VALUES (96, 102, 1, '');
 INSERT INTO public.appointments VALUES (97, 102, 1, '11am');
 
 
