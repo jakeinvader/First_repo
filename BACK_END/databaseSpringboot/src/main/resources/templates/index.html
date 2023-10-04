@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DataBase</title>
+</head>
+<body>
+    <h1>Inicio</h1>
+    <a th:href="@{/anexar}">Alta Persona</a>
+    <div th:if="${personas != null and !personas.empty}">
+        <table border="2">
+            <tr>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+            <tr th:each="persona : ${personas}">
+                <td th:text="${persona.name}"></td>
+                <td th:text="${persona.lastname}"></td>
+                <td th:text="${persona.phone}"></td>
+                <td th:text="${persona.email}"></td>
+                <td th:text="${persona.age}"></td>
+            </tr>
+        </table>
+    </div>
+    <div th:if="${personas == null or personas.empty}">
+        Lista sin información
+    </div>
+</body>
+</html>
