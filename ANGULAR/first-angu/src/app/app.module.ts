@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador/contador.component';
+import { ButtonsComponent } from './buttons/buttons.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent
+    ContadorComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
