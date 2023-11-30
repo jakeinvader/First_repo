@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 const urlBase = 'https://api.openweathermap.org/data/2.5/weather';
-const appId = 'f42d01f198159e4f0795acc3d3148007';
+const appId = '';
 @Injectable({
   providedIn: 'root'
 })
