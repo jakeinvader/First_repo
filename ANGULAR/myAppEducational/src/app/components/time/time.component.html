@@ -1,0 +1,38 @@
+<div class="container">
+    <br>
+    <h4>City weather forecast</h4>
+    <h5> {{ date | date: 'dd/MM/yyyy' }}</h5>
+    <div class="col-lg-6 col-md-6 align card">
+        <form [formGroup]="form" (ngSubmit)="consult()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">City/Town</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="city">
+              <p class="text-danger" *ngIf="form.get('city')?.invalid && form.get('city')?.touched">Please write only letters and not include the city of Neiva</p>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">City/Town Code</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" formControlName="code">
+              <p class="text-danger" *ngIf="form.get('code')?.invalid && form.get('code')?.touched">Please write only letters</p>
+            </div>
+            <button type="submit" class="btn btn-primary">consult</button>
+          </form>
+          <p class="rext-danger" **ngIf="showError"> {{ messageError }} </p>
+    </div>
+
+    <div class="col-lg-6 col-md-6 align">
+        <div class="card">
+            <div class="card-body">
+              <ul>
+                <li>Description: {{ description }}</li>
+                <li>Temperature: {{ temperature }}</li>
+                <li>Humidity: {{ humidity }}</li>
+                <li>Town: {{ name }}</li>
+                <li>Latitude: {{ latitude }}</li>
+                <li>Longitude: {{ longitude }}</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- api key -->
+<!-- api secret : f42d01f198159e4f0795acc3d3148007 -->

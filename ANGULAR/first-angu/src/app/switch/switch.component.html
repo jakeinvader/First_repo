@@ -1,0 +1,17 @@
+<p>Enter a week number</p>
+<input type="text" class="form-control" #newDay>
+
+<button class="btn btn-primary mt-4 mb-4" (click)="day = newDay.value">
+    Show day
+</button>
+
+<div [ngSwitch]="day" *ngIf="day">
+    <span *ngSwitchCase="'1'">Monday</span>
+    <span *ngSwitchCase="'2'">Tuesday</span>
+    <span *ngSwitchCase="'3'">Wednesday</span>
+    <span *ngSwitchCase="'4'">Thursday</span>
+    <span *ngSwitchCase="'5'">Friday</span>
+    <span *ngSwitchCase="'6'">Saturday</span>
+    <span *ngSwitchCase="'7'">Sunday</span>
+    <span *ngSwitchDefault>Invalid value</span>
+</div>
